@@ -1,0 +1,212 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html{
+    font-size: 10px;
+  }
+.home{
+  height: 100vh;
+  background-color: #fff;
+}
+  .container{
+    width: 90%;
+  }
+  .home-image{
+    width:100%;
+  }
+
+  .watch-button{
+    width: 40%;
+  }
+
+  .watch-button button{
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-block: 1rem;
+  }
+
+  .icon{
+    /* display: none; */
+    width: 20px;
+    height: 20px;
+  }
+
+  .icon::before{
+    width: 15px;
+    height: 15px;
+  }
+
+  .icon i{
+    font-size: 0.8rem;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container{
+    width: 80%;
+  }
+
+  .home-image{
+    width:70%;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .chefs-section > .container{
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .chef-card{
+    width: 45%;
+  }
+
+  .masonry-layout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .column{
+    width: 30%;
+  }
+
+  .contact-card{
+    width: 45%;
+    flex-grow: 1;
+  }
+
+  .footer > .container{
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    flex-wrap: nowrap;
+  }
+
+  ul li{
+    font-size: 1.2rem;
+  }
+
+  .column:nth-of-type(2){
+    width: 40%;
+  }
+
+  .row{
+    text-align: left;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+.container{
+  width: 90%;
+}
+
+.section > .container{
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-image{
+  width: 50%;
+}
+
+.home-content{
+  width: 30%;
+  text-align: left;
+}
+
+.home{
+  height: 100vh;
+  /* background-color: #fff; */
+}
+
+.btns{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 1rem;
+}
+
+.chef-card{
+  width: 30%;
+}
+
+
+
+.form-group input[type="email"],.form-group input[type="text"]{
+  width: 40%;
+  flex-grow: 1;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .nav-menu{
+    display: flex ;
+  }
+  .nav-menu ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    padding: 1rem;
+  }
+  
+  .nav-menu ul li{
+    margin-inline: 1rem;
+    padding-block: 5px;
+    position: relative;
+  }
+  
+  .nav-menu ul li::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    top: 100%;
+    bottom: 0;
+    background-color: #ff1010;
+  }
+  
+  .nav-menu ul li:hover::after{
+    width: 100%;
+    transition: width 0.5s;
+  
+  }
+  
+  .nav-menu ul li a{
+    color: #333;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  
+  .nav-icons :nth-child(2){
+    display: none;
+  }
+
+  .home-image{
+    width: 40%;
+  }
+  .container{
+    width: 80%;
+  }
+
+}
